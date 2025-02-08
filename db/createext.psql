@@ -1,0 +1,4 @@
+-- During seeding (http://localhost:3000/seed), it would encounter an error creating extension for
+-- "uuid-ossp" (duplicate entry). I suspect it's a race condition given async nature.
+-- Rerunning seeding would succeed. As a workaround, I move it to right after db creation.
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
