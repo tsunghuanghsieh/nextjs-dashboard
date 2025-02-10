@@ -5,6 +5,7 @@
     "createdb": "./db/setup.sh",
     "deletedb": "./db/teardown.sh",
     "dev": "next dev --turbopack",
+    "lint": "next lint",
     "start": "next start"
   },
   "dependencies": {
